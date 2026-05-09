@@ -23,15 +23,9 @@ line-height:1.8;
 ">
 
 <p style="font-size:18px;">
-QuoteX is my small attempt to collect thoughts, wisdom, emotions, and perspectives from the deepest minds to ever exist.
+QuoteX is my small attempt to collect thoughts, wisdom, emotions, and perspectives from the deepest minds to ever exist. One quote every day feels like learning one new truth about life.
 </p>
-
-<p style="font-size:18px;">
-One quote every day feels like learning one new truth about life.
-</p>
-
 </div>
-
 <br>
 </div>
 <img width="1920" height="987" alt="image" src="https://github.com/user-attachments/assets/8651c365-d9d8-42dd-a549-08ad62b72a6f" />
