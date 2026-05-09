@@ -5,7 +5,6 @@
 }
 body {
     background: #bbc6fa;
-    font-family: 'Georgia', 'calibri', sans-serif;
 }
 .quote-box{
     background: #fff;
@@ -65,10 +64,10 @@ body {
     justify-content: center;
 }
 .quote-box button{
-    background: rgb(23, 124, 229);
+    background: black;
     color: #fff;
     border-radius: 25px;
-    border: 1px solid rgb(23, 124,229);
+    border: 1px solid black;
     width:150px;
     height: 50px;
     display: flex;
@@ -76,4 +75,12 @@ body {
     align-items: center;
     margin: 5px;
     cursor: pointer;
+}
+.quote-box button img{
+    width: 20px;
+    margin-right: 10px;
+}
+.quote-box button:nth-child(2){
+    background: transparent;
+    color: #333;
 }

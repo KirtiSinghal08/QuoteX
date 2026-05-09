@@ -9,13 +9,27 @@
 <body>
     <div class="quote-box">
         <h2>Quote of the Day!</h2>
-        <blockquote>Loading...</blockquote>
-        <span>Loading...</span>
+        <blockquote id="quote">Loading...</blockquote>
+        <span id="author">Loading...</span>
         <div>
-            <button id="new-quote">New Quote</button>
-            <button id="tweet-quote">Tweet</button>
-        </div>
+            <button id="new-quote" onclick="getquote(api_url)">New Quote</button>
+            <button id="tweet-btn"><img src="X.JPG" alt="X Logo">Tweet</button>
+        </div>    
     </div>
+<script>
+    const quote = document.getElementById('quote');
+    const author = document.getElementById('author');
+    const api_url = "https://dummyjson.com/quotes/random";
+
+    async function getquote(url){
+        const response = await fetch(url);
+        var data = await response.json();  
+        quote.innerHTML = data.quote;
+        author.innerHTML = data.author;
+    }
+
+    getquote(api_url);
+</script>
         
 </body>
 </html>
