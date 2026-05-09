@@ -3,8 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ── Body & page ── */
 body {
-    background: #bbc6fa;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lora', serif; font-style: italic;
+
+background: linear-gradient(135deg,
+    #8ab8d8 0%, #7ab89a 30%,
+    #b88ecf 60%, #d9a882 100%);
+
+background-image:
+    radial-gradient(ellipse 60% 50% at 20% 30%,
+      rgba(100,160,220,.65) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 60% at 80% 70%,
+      rgba(100,190,150,.60) 0%, transparent 65%),
+    radial-gradient(ellipse 45% 40% at 60% 15%,
+      rgba(180,140,230,.55) 0%, transparent 60%),
+    linear-gradient(135deg,
+      #8ab8d8 0%, #7ab89a 30%,
+      #b88ecf 60%, #d9a882 100%);
 }
 .quote-box{
     background: #fff;
@@ -16,7 +38,12 @@ body {
     padding: 40px;
     border-radius: 10px;
     text-align: center;
-    box-shadow:0 30px 50px 0px rgba(0,0,0,0.8);
+    
+    background: rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow:0 30px 50px 0px rgba(0,0,0,0.8);
 
 }
 .quote-box h2{
@@ -24,12 +51,12 @@ body {
     margin-bottom: 40px;
     position: relative;
 }
-.quote-box h2::after{
+.quote-box h2::after {
     content: '';
-    width: 75px;
-    height: 3px;
+    width: 100px;
+    height: 4px;               /* slightly thinner, more elegant */
     border-radius: 3px;
-    background: rgb(23, 124, 229);
+    background: linear-gradient(90deg, #7c5cbf, #3a9e7a);
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -48,11 +75,11 @@ body {
     float: right;
     position: relative;
 }
-.quote-box span::before{
-    content:'';
+.quote-box span::before {
+    content: '';
     width: 20px;
-    height: 2px;
-    background: rgb(23, 124, 229);
+    height: 2px;            
+    background: linear-gradient(90deg, #7c5cbf, #3a9e7a);  /* matches heading */
     position: absolute;
     top: 50%;
     left: -30px;

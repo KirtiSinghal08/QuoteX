@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quote of the Day!</title>
-    <link rel="stylesheet" href="style.css">                                        
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">                                       
 </head>
 <body>
     <div class="quote-box">
@@ -36,7 +37,7 @@ document.getElementById("tweet-btn").addEventListener("click", () => {
     const twitterUrl =
     `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
 
-    window.open(twitterUrl, "_blank");
+    window.open(twitterUrl, "Tweet Window", "width=600, height=300");
 
 });
 
