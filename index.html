@@ -29,6 +29,20 @@
     }
 
     getquote(api_url);
+document.getElementById("tweet-btn").addEventListener("click", () => {
+
+    const tweetText = `"${quote.innerHTML}" — ${author.innerHTML}`;
+
+    const twitterUrl =
+    `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
+
+    window.open(twitterUrl, "_blank");
+
+});
+
+document.getElementById("new-quote").addEventListener("click", () => {
+    getquote(api_url);
+});
 </script>
         
 </body>
