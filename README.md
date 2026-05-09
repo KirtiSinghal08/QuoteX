@@ -28,4 +28,5 @@ QuoteX is my small attempt to collect thoughts, wisdom, emotions, and perspectiv
 </div>
 <br>
 </div>
-<img width="1920" height="987" alt="image" src="https://github.com/user-attachments/assets/8651c365-d9d8-42dd-a549-08ad62b72a6f" />
+<img width="1917" height="1019" alt="image" src="https://github.com/user-attachments/assets/a8aa76bc-cd42-4675-87f5-79efe284ffe8" />
+
